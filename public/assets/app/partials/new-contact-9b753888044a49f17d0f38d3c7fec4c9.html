@@ -1,0 +1,35 @@
+<script type="text/javascript">
+alert("in new partial..............");
+</script>
+  
+
+<div>
+	<div>
+		<h3>Add New Contact</h3>
+	</div>
+		<form id="contact_form" ng-submit="addContact()">
+			<label>First Name</label>
+			<input type="text" id="new_contact_first_name" name="newContactFirstName" ng-model="newFirstName"></br>
+			<label>Last Name</label>
+			<input type="text" id="new_contact_last_name" name="newContactLastName" ng-model="newLastName" ></br>
+			</br>
+			<input type="button" id="contact_submit_btn" value="Add Contact" class="btn btn-primary">
+			<a href="/#/contacts" class="btn">Cancel</a>
+		</form>
+		
+		
+		
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+		
+		$("#contact_submit_btn").click(function(){			
+			$("#contact_form").submit();
+			
+		});	
+		
+	});
+		
+	
+</script>

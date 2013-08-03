@@ -1,0 +1,21 @@
+
+<div class='dashstyle'>
+	<h2 class="offset6" style="margin-top:25px;margin-left:100px">Dashboard</h2>
+ <div class="container well" id = "content" style="margin-top:15px;width:377px;border-color:blue; background-color:#7FFFD4">
+ 	<table>
+ 	<tr>
+ 	<td><h3>Users</h3> </td>
+ 	<td>:</td>
+ 	<td><h5>{{users}}</h5></td>
+ 	</tr>
+ 	<tr>
+ 	<td><h3>last updated at &nbsp</h3></td>
+ 	<td>:</td>
+ 	<td><h5><%= Time.now.strftime("%m/%d/%Y")%></h5></td>
+ 	<td><%= "\n" %></td>
+ 	<td><h5><%= Time.now.strftime("%I:%M:%S %z")%></h5></td>
+	</tr> 
+</table>
+ </div>
+
+

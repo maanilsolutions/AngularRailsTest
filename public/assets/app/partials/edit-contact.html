@@ -1,0 +1,36 @@
+<div>
+	<div>
+		<h3>Add New Contact</h3>
+	</div>
+		<form id="contact_form">
+			<label>First Name</label>
+			<input type="text" id="edit_contact_first_name" name="newContactFirstName" value="{{contact.first_name}}" ng-model="newFirstName"></br>
+			<label>Last Name</label>
+			<input type="text" id="edit_contact_last_name" value="{{contact.last_name}}" name="newContactLastName" ng-model="newLastName" ></br>
+			</br>
+			<a type="button" id="contact_submit_btn" value="Update Contact" ng-click="saveContact()" class="btn btn-primary">
+				<i class="icon-check icon-white"></i>
+				Save Changes				
+			</a>
+			<a href="/#/contacts" class="btn">
+				
+				Back
+			</a>
+		</form>
+		
+		
+		
+</div>
+
+<script type="text/javascript">
+	// $(document).ready(function(){	
+// 		
+		// $("#contact_submit_btn").click(function(){			
+			// $("#contact_form").submit();
+// 			
+		// });	
+// 		
+	// });
+		
+	
+</script>

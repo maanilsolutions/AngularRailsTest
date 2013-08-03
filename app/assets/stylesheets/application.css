@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require bootstrap.min
+ *= require_tree .
+*/
+
+@import "bootstrap";
+
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+
+div.dataTables_length label {    
+    float: left;
+    text-align: left;
+}
+ 
+div.dataTables_length select {
+    width: 75px;
+}
+ 
+div.dataTables_filter label {
+    float: right;    
+}
+ 
+div.dataTables_info {
+    padding-top: 8px;
+}
+ 
+div.dataTables_paginate {
+    float: right;
+    margin: 0;
+}
+ 
+table {
+    margin: 1em 0;
+    clear: both;
+}
+
+
+table.table thead .sorting,
+table.table thead .sorting_asc,
+table.table thead .sorting_desc,
+table.table thead .sorting_asc_disabled,
+table.table thead .sorting_desc_disabled {
+    cursor: pointer;
+    *cursor: hand;
+}
+ 
+table.table thead .sorting { background: url('images/sort_both.png') no-repeat center right; }
+table.table thead .sorting_asc { background: url('images/sort_asc.png') no-repeat center right; }
+table.table thead .sorting_desc { background: url('images/sort_desc.png') no-repeat center right; }
+ 
+table.table thead .sorting_asc_disabled { background: url('images/sort_asc_disabled.png') no-repeat center right; }
+table.table thead .sorting_desc_disabled { background: url('images/sort_desc_disabled.png') no-repeat center right; }
+
+
+
+.span5 {
+     width: 290px;
+    background: none repeat scroll 0 0 #F1F1F1;
+    padding-left: 50px;
+    
+   }
+
+.span7{
+   width: 968px;
+   margin-left: 100px;
+    background: none repeat scroll 0 0 #F1F1F1;
+
+
+    
+}
+
+.span4 {
+width: 394px;
+margin-left: 180px;
+   
+}
+.span3{
+float:right;
+width: 270px;
+margin-left: 200px;
+
+}
+    
+.Signup-button
+{
+   line-height: 50px; 
+}
+li {
+    line-height: 20px;
+}

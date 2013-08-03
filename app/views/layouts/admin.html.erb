@@ -1,0 +1,104 @@
+<script type="text/javascript">
+alert("in admin layout..............")
+</script>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html ng-app="contactapp">
+<head>
+  <title>AngularTrialProject</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+  <%= csrf_meta_tags %>
+  
+</head>
+<body>
+  
+    <%= render 'common/header' %>
+
+
+    <p class="notice"><%= notice %></p>
+
+       <p class="alert"><%= alert %></p>
+
+
+
+
+           
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span2">
+          
+            <!-- <ul>
+               <li><a href='/#/contacts'><span>Standup Report</span></a></li>
+              <li><a href='#'><span>menu1</span></a></li>
+              <li><a href='#'><span>menu2</span></a></li>
+            </ul> -->
+
+
+
+
+            <div class="list-group" >
+              <li>
+                <a href="/#/dashboard" class="list-group-item active">
+                  Dashboard
+                </a></li>
+                <li><a href="/#/contacts" class="list-group-item">Contacts
+                </a></li>
+                <li><a href="/#/home" class="list-group-item">menu1
+                </a></li>
+                <li><a href="#" class="list-group-item">menu2
+                </a></li>
+                <li><a href="#" class="list-group-item">menu3
+                </a></li>
+            </div>
+
+
+
+
+ <!-- <div id="toolbarbottom" class="toolbar" style="position: fixed; clear: both; overflow: visible; bottom: 0px; left: 0px; width: 100%;">
+     <ul>
+         <li id="active"><span><a id="current" href="#add" class="button">News</a></span></li>
+         <li><span> <a href="#Updates" class="btn btn-default">Updates</a></span> </li>
+         <li><span><a href="#Contact" class="button">Contact Us</a></span></li>
+         <li><span><a href="#Website" class="button">Website</a> </span></li>
+         <li><span><a href="#Refresh" id="#Refresh" class="button">Refresh</a></span> </li>
+     </ul>
+</div> -->
+
+          
+
+        </div>
+        <div class="span9">
+            <div ng-view></div>  
+                                                        
+        </div>
+      </div>
+    </div>  
+
+
+ 
+
+
+    
+        
+
+
+
+
+
+
+ 
+
+
+</body>
+</html>
